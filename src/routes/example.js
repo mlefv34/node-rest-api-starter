@@ -6,7 +6,7 @@ const ITEMS = ['alpha', 'beta', 'gamma', 'delta'];
 
 exampleRouter.get('/', (req, res) => {
   res.json({
-    message: 'Hello from the example route',
+    message: 'Hello from the example route — v2',
     items: ITEMS,
     count: ITEMS.length,
   });

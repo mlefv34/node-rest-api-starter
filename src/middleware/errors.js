@@ -1,3 +1,4 @@
+// centralized error handler — handles 4xx and 5xx
 export function errorHandler(err, req, res, next) {
   console.error(`[error] ${req.method} ${req.path}`, err.stack || err);
   const status = err.status || 500;

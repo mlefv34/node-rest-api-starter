@@ -8,5 +8,6 @@ healthRouter.get('/', (req, res) => {
     uptime: process.uptime(),
     timestamp: Date.now(),
     version: process.env.npm_package_version || '1.2.0',
+    memory: process.memoryUsage().rss,
   });
 });

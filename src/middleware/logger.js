@@ -1,3 +1,4 @@
+// improved format: includes response time
 export function requestLogger(req, res, next) {
   const start = Date.now();
   res.on('finish', () => {

@@ -20,7 +20,8 @@ exampleRouter.get('/:id', (req, res) => {
   res.json({ id: idx, value: ITEMS[idx] });
 });
 
-exampleRouter.post('/', (req, res) => {
+// POST: validates name field before inserting
+exampleRouter.post('/, (req, res) => {
   const { name } = req.body || {};
   if (!name || typeof name !== 'string' || name.length === 0) {
     return res.status(400).json({ error: 'name is required (non-empty string)' });

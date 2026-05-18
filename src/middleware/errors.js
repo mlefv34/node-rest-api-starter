@@ -1,4 +1,4 @@
-// centralized error handler — handles 4xx and 5xx
+// centralized error handler — clean JSON response for all error types
 export function errorHandler(err, req, res, next) {
   console.error(`[error] ${req.method} ${req.path}`, err.stack || err);
   const status = err.status || 500;

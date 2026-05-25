@@ -23,7 +23,7 @@ cp .env.example .env
 npm start
 ```
 
-Le serveur écoute sur `http://localhost:3000` par défaut.
+Le serveur écoute sur `http://localhost:3000` par défaut (configurable via PORT dans .env).
 
 ## Project structure
 
